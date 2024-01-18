@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "basmoddertje",
+	"version": "${version}",
+	"name": "basmoddertje",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/basmoddertje/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"simplicated.cc.Basmoddertje"
+		],
+		"fabric-datagen": [
+			"simplicated.cc.BasmoddertjeDataGenerator"
+		]
+	},
+	"mixins": [
+		"basmoddertje.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.5",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
